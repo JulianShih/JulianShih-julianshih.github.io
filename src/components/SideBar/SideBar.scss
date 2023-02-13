@@ -1,0 +1,53 @@
+div.side-bar {
+  /* Positioning */
+  position: absolute;
+  left: -18vw;
+  z-index: z-index('sidebar');
+
+  /* Box-model */
+  display: flex;
+  height: 100vh;
+  padding: 1.48vh 0;
+
+  /* Visual */
+  transition: left 0.5s ease-in-out;
+
+  & > .container {
+    /* Box-model */
+    width: 18vw;
+    margin-top: 2.5vw;
+    margin-bottom: 8vh;
+
+    /* Visual */
+    background: black;
+    border: 0.21vw double antiquewhite;
+    border-left: none;
+    border-radius: 0 1.67vw 1.67vw 0;
+    opacity: 0.8;
+  }
+
+  & > .icon {
+    /* Box-model */
+    display: flex;
+    margin: 0 1.67vw;
+
+    /* Flexible Box */
+    justify-content: center;
+    align-items: center;
+
+    /* Box-model */
+    width: 5vw;
+    height: 5vw;
+
+    /* Visual */
+    background: white;
+    border-radius: 50%;
+
+    & > img {
+      /* Box-model */
+      width: 3.75vw;
+      height: 3.75vw;
+
+    }
+  }
+}

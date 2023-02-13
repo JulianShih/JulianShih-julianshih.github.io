@@ -1,0 +1,61 @@
+@font-face {
+  font-family: cormorant-garamond;
+  src: url(../fonts/CormorantGaramond-Regular.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: cormorant-garamond-semi-bold;
+  src: url(../fonts/CormorantGaramond-SemiBold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: cormorant-garamond-bold;
+  src: url(../fonts/CormorantGaramond-Bold.ttf) format('truetype');
+}
+
+@font-face {
+  font-family: beth-ellen;
+  src: url(../fonts/BethEllen-Regular.ttf) format('truetype');
+}
+
+.font-h1 {
+  /* Typography */
+  font-family: cormorant-garamond-semi-bold, serif;
+  font-size: 1.875vw;
+  letter-spacing: 0.11vw;
+}
+
+.font-h2 {
+  /* Typography */
+  font-family: cormorant-garamond-semi-bold, serif;
+  font-size: 1.67vw;
+  letter-spacing: 0.11vw;
+}
+
+.font-h3 {
+  /* Typography */
+  font-family: cormorant-garamond-semi-bold, serif;
+  font-size: 1.25vw;
+  letter-spacing: 0.11vw;
+}
+
+.font-h4 {
+  /* Typography */
+  font-family: cormorant-garamond-semi-bold, serif;
+  font-size: 1.04vw;
+  letter-spacing: 0.05vw;
+}
+
+.font-h5 {
+  /* Typography */
+  font-family: cormorant-garamond-semi-bold, serif;
+  font-size: 0.83vw;
+  letter-spacing: 0.05vw;
+}
+
+.handwrite {
+  /* Typography */
+  font-family: beth-ellen, sans-serif;
+  font-size: 0.83vw;
+  letter-spacing: 0.05vw;
+}

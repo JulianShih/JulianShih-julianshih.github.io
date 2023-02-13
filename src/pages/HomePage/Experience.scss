@@ -1,0 +1,37 @@
+div.experience {
+  /* Box-model */
+  display: flex;
+  width: 100%;
+  padding: 0 2.96vh 2.96vh;
+
+  /* Flexible Box */
+  flex-direction: column;
+
+  /* Visual */
+  box-sizing: border-box;
+
+  & > .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    & > .block {
+      display: flex;
+      flex-direction: column;
+  
+      & > .tags {
+        display: flex;
+        padding: 2vh 0;
+    
+        & > button {
+          margin: 0.21vw;
+        }
+      }
+    }
+  }
+
+  & > hr {
+    color: antiquewhite;
+    width: 100%;
+  }
+}

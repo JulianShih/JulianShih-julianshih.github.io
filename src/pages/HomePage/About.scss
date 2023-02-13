@@ -1,0 +1,35 @@
+div.about {
+  /* Box-model */
+  display: flex;
+  width: 100%;
+  padding: 2.96vh;
+
+  /* Flexible Box */
+  flex-direction: column;
+
+  /* Visual */
+  box-sizing: border-box;
+
+  & > .icons {
+    display: flex;
+    margin: 1.48vh 0;
+
+    & > a {
+      margin: 0 0.42vw;
+    }
+  }
+
+  & > .tags {
+    display: flex;
+    margin: 1.48vh 0;
+
+    & > button {
+      margin: 0 0.21vw;
+    }
+  }
+
+  & > hr {
+    color: antiquewhite;
+    width: 100%;
+  }
+}

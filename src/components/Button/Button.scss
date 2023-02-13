@@ -1,0 +1,15 @@
+button {
+  /* Box-model */
+  border: 0.1vh solid white;
+
+  /* Visual */
+  color: antiquewhite;
+  background: none;
+
+  &:hover {
+    /* Visual */ 
+    color: black;
+    background: antiquewhite;
+    transition: .3s ease-in-out;
+  }
+}
