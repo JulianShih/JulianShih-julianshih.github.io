@@ -19,7 +19,7 @@ const About = () => {
       <span className="font-h2">Software Engineer</span>
       <span className="font-h3">Taipei, Taiwan</span>
       <div className="icons">
-        <a href="yashih.cs08@nycu.edu.tw"><img src={email} alt="" width="24"/></a>
+        <a href="mailto:yashih.cs08@nycu.edu.tw"><img src={email} alt="" width="24"/></a>
         <a href="https://www.linkedin.com/in/julianshih/"><img src={lin} alt="" width="24"/></a>
         <a href="https://github.com/JulianShih"><img src={git} alt="" width="24"/></a>
       </div>

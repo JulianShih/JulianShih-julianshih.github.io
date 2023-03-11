@@ -1,6 +1,5 @@
 // region 1. Platform Libraries
 import React, { useState } from 'react';
-import { createRoot } from 'react-dom/client';
 // endregion
 
 const ReactButtonToggle = () => {
