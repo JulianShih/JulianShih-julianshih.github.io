@@ -1,3 +1,5 @@
+@import "../../styles/color";
+
 div.experience {
   /* Box-model */
   display: flex;
@@ -22,16 +24,12 @@ div.experience {
       & > .tags {
         display: flex;
         padding: 2vh 0;
-    
-        & > button {
-          margin: 0.21vw;
-        }
       }
     }
   }
 
   & > hr {
-    color: antiquewhite;
+    border-color: $monokai-grey;
     width: 100%;
   }
 }

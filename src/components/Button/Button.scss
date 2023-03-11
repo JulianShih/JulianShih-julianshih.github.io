@@ -1,15 +1,21 @@
+@import "../../styles/_color";
+
 button {
   /* Box-model */
-  border: 0.1vh solid white;
+  padding: 0.42vw;
+  border: 0.21vh solid turquoise;
+  border-radius: 0.42vw;
 
   /* Visual */
-  color: antiquewhite;
-  background: none;
+  color: black;
+  background: turquoise;
+  transition: .3s ease-in-out;
 
   &:hover {
     /* Visual */ 
+    cursor: pointer;
     color: black;
-    background: antiquewhite;
-    transition: .3s ease-in-out;
+    background: aquamarine;
+    border: 0.21vh solid turquoise;
   }
 }

@@ -1,3 +1,5 @@
+@import "../../styles/color";
+
 div.about {
   /* Box-model */
   display: flex;
@@ -22,14 +24,10 @@ div.about {
   & > .tags {
     display: flex;
     margin: 1.48vh 0;
-
-    & > button {
-      margin: 0 0.21vw;
-    }
   }
 
   & > hr {
-    color: antiquewhite;
+    border-color: $monokai-grey;
     width: 100%;
   }
 }

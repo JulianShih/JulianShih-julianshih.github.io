@@ -13,9 +13,9 @@ body {
   color: antiquewhite;
 
   /* Visual */
-  background: black;
+  background: $monokai-black;
 
-  & > div#index {
+  & > div#root {
     /* Box-model */
     height: 100vh;
   }

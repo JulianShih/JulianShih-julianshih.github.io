@@ -1,7 +1,7 @@
-div.side-bar {
+div.sidebar {
   /* Positioning */
   position: absolute;
-  left: -18vw;
+  left: -16vw;
   z-index: z-index('sidebar');
 
   /* Box-model */
@@ -14,16 +14,25 @@ div.side-bar {
 
   & > .container {
     /* Box-model */
-    width: 18vw;
+    width: 16vw;
     margin-top: 2.5vw;
     margin-bottom: 8vh;
+    padding: 2vw;
+    box-sizing: border-box;
+
+    /* Flexible Box */
+    display: flex;
+    flex-direction: column;
 
     /* Visual */
-    background: black;
+    background: rgba(0, 0, 0, 0.8);
     border: 0.21vw double antiquewhite;
     border-left: none;
     border-radius: 0 1.67vw 1.67vw 0;
-    opacity: 0.8;
+
+    & > button {
+      width: 100%;
+    }
   }
 
   & > .icon {
@@ -49,5 +58,9 @@ div.side-bar {
       height: 3.75vw;
 
     }
+  }
+
+  & > .container {
+    justify-content: space-around;
   }
 }
