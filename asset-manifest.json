@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.9c88e438.css",
-    "main.js": "/static/js/main.8e16f92a.js",
+    "main.css": "/static/css/main.ab982fa7.css",
+    "main.js": "/static/js/main.ce51be00.js",
     "static/media/CormorantGaramond-SemiBold.ttf": "/static/media/CormorantGaramond-SemiBold.b2e099961ec65e0ee335.ttf",
     "static/media/CormorantGaramond-Regular.ttf": "/static/media/CormorantGaramond-Regular.e1f2c50eda29fd294be2.ttf",
     "static/media/CormorantGaramond-Bold.ttf": "/static/media/CormorantGaramond-Bold.9f7b94f23ddc828f9376.ttf",
@@ -10,11 +10,11 @@
     "static/media/head.svg": "/static/media/head.d526a7ec1aa6aeb4743065440391a875.svg",
     "static/media/lin.svg": "/static/media/lin.171001b536ab25e981a58e1ea76991dc.svg",
     "index.html": "/index.html",
-    "main.9c88e438.css.map": "/static/css/main.9c88e438.css.map",
-    "main.8e16f92a.js.map": "/static/js/main.8e16f92a.js.map"
+    "main.ab982fa7.css.map": "/static/css/main.ab982fa7.css.map",
+    "main.ce51be00.js.map": "/static/js/main.ce51be00.js.map"
   },
   "entrypoints": [
-    "static/css/main.9c88e438.css",
-    "static/js/main.8e16f92a.js"
+    "static/css/main.ab982fa7.css",
+    "static/js/main.ce51be00.js"
   ]
 }
