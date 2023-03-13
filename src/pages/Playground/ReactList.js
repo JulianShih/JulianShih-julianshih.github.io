@@ -8,25 +8,21 @@ const data = [
   { name: 'Jen', age: 31 },
 ];
 
-const ListItem = ({name, age}) => {
-  return (
-    <li>
-      <span>{`${name} `}</span>
-      <span>{age}</span>
-    </li>
-  );
-};
-
 const ReactList = () => {
+  const ListItem = data.map((d, key) => {
+    return (
+      <li key={key}>
+        <span>{`${d.name} `}</span>
+        <span>{d.age}</span>
+      </li>
+    );
+  })
+
   return (
     <div>
       <h2>Data List</h2>
       <ul>
-        {data.map((d, key) => {
-          return (
-            <ListItem name={d.name} age={d.age} key={key}/>
-          );
-        })}
+        {ListItem}
       </ul>
     </div>
   );

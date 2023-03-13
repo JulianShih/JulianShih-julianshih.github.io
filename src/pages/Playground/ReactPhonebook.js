@@ -52,12 +52,10 @@ function PhoneBookForm(props) {
             ...userState,
             [e.target.name]: e.target.value,
         })
-        console.log('onChange', userState);
     }
     const onSubmit = (e) => {
         e.preventDefault();
         if(userState.userFirstname && userState.userLastname && userState.userPhone) {
-            console.log('onSubmit', userState);
             addUser(userState);
             setUserState(user);
         }
@@ -110,28 +108,30 @@ function PhoneBookForm(props) {
 
 function InformationTable(props) {
     const { usersState } = props;
-    console.log(usersState);
-    const rows = usersState
-        ? usersState.map((user, index) => (
+    const sortedUsers = usersState.sort((a, b) => (
+        a.userLastname.toLowerCase().localeCompare(b.userLastname.toLowerCase())
+    ));
+    const Rows = sortedUsers
+        ? sortedUsers.map((user, index) => (
             <tr key={index}>
                 <td style={style.tableCell}>{user.userFirstname}</td>
                 <td style={style.tableCell}>{user.userLastname}</td>
                 <td style={style.tableCell}>{user.userPhone}</td>
             </tr>
         ))
-        : null;
+        : undefined;
 
     return (
         <table style={style.table} className="informationTable">
             <thead>
-                <tr key={`row-0`}>
+                <tr>
                     <th style={style.tableCell}>First name</th>
                     <th style={style.tableCell}>Last name</th>
                     <th style={style.tableCell}>Phone</th>
                 </tr>
             </thead>
             <tbody>
-                {rows}
+                {Rows}
             </tbody>
         </table>
     );
@@ -140,7 +140,6 @@ function InformationTable(props) {
 function Application() {
     const [usersState, setUsersState] = useState([]);
     const addUser = (user) => {
-        console.log('addUser', user, usersState);
         setUsersState([
             ...usersState,
             user
